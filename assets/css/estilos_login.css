@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Page Style */
+    --background-color: #f2f2f2;
+    
+    /* Colors */
+    --primary: #333;
+    --secondary: #FFFFFF;
+    --label: #555;
+    --button: #4CAF50;
+    --button-hover: #45a049;
+    
+    /* Footer Style */
+    --background-footer: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+header {
+    background-color: var(--primary);
+    padding: 5px 20px;  /* Reducimos el padding para que sea más compacto */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Para que el contenido quede más cerca de la barra */
+    flex-grow: 1;
+    padding: 40px 20px 20px; /* Reducimos el padding superior */
+}
+
+h1 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+/* FORMULARIO MÁS GRANDE */
+form {
+    background: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Aumentamos el padding */
+    width: 100%;
+    max-width: 500px; /* Hacemos el formulario más ancho */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px; /* Aumentamos el padding */
+    width: 100%;
+    font-size: 16px;
+}
+
+button {
+    background-color: var(--button);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 12px; /* Botón más grande */
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+form a {
+    text-align: center;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--background-footer);
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Aumentamos el padding para hacerlo más grande */
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .logo-footer-izquierdo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que los elementos se acomoden mejor en pantallas pequeñas */
+}
+
+footer p {
+    font-size: 16px; /* Aumentamos el tamaño del texto */
+}
+
+footer img {
+    max-width: 300px; /* Hacemos el logo más grande */
+    height: auto;
+}

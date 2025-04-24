@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Page Style */
+    --background-color: #f2f2f2;
+    
+    /* Colors */
+    --primary: #333;
+    --secondary: #FFFFFF;
+    --label: #555;
+    --button: #4CAF50;
+    --button-hover: #45a049;
+    
+    /* Footer Style */
+    --background-footer: #333;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav img.logo {
+    max-width: 150px; /* Limita el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción */
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .links a, nav .links select {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+}
+
+nav .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+form .btn:hover {
+    background-color: #45a049;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--background-footer);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; /* Aumentamos el padding para mayor altura */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 18px; /* Aumenta el tamaño de la fuente para que sea más visible */
+}
+
+footer .logo-footer-izquierdo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Aumenta el espacio entre los elementos dentro del footer */
+}
+
+footer img {
+    margin-left: 20px;
+    max-width: 200px; /* Aumentamos el tamaño máximo de la imagen del logo */
+}
